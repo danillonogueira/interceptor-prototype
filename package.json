@@ -1,0 +1,23 @@
+{
+  "name": "interceptor-prototype",
+  "version": "1.0.0",
+  "description": "Application for sketching services treatment under Guarani Sistema's patterns",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp watch"
+  },
+  "author": "Danillo Lucas Nogueira",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.8",
+    "angular-cookies": "^1.7.8",
+    "angular-resource": "^1.7.8",
+    "angular-route": "^1.7.8"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-stylus": "^2.7.0"
+  }
+}
