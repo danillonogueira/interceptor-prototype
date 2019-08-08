@@ -4,13 +4,13 @@
   padding: 0;
 }
 body {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
   background: #fff;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
 }
 .login {
   border: solid 1px #0384fc;
@@ -27,28 +27,25 @@ body {
   width: 100%;
 }
 .login-group label {
-  text-transform: capitalize;
-  padding: 5px 0;
   color: #4d4d4d;
+  padding: 5px 0;
+  text-transform: capitalize;
 }
 .login-group input {
-  padding: 10px;
-  border-radius: 4px;
   border: solid 1px #949494;
+  border-radius: 4px;
+  padding: 10px;
 }
 .login-group input::placeholder {
   color: #949494;
 }
 .login-group button {
+  background: #0384fc;
   border: none;
+  border-radius: 1px;
   color: #fff;
   cursor: pointer;
-  background: #0384fc;
   padding: 10px 0;
   text-transform: capitalize;
-  border-radius: 1px;
   width: 100%;
-}
-span {
-  color: #f00;
 }

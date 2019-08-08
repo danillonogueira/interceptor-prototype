@@ -1,8 +1,6 @@
 (function(angular) {
   'use strict';
 
-  console.log('app loaded');
-
   // Injecting
   angular.module('am', [
     'ngRoute',
@@ -17,7 +15,8 @@
       function($routeProvider) {
         $routeProvider
           .when('/login', {
-            template: '<am.login></am.login>'
+            templateUrl: 'app/login/login-view.html',
+            controller: 'LoginController as ctrl'
           })
           .otherwise('/login');
       }

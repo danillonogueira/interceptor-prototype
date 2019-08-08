@@ -1,13 +1,21 @@
 (function(angular) {
   'use strict';
 
-  console.log('login-controller loaded');
-
-  const loginController = function() {
-
+  const LoginController = function($scope, LoginService) {
+    $scope.email = '';
+    $scope.password = '';
+    this.login = function() {
+      LoginService.trigger(
+        { 
+          email: $scope.email, 
+          password: $scope.password 
+        }
+      );
+    };
   };
 
+  angular.$inject = ['LoginService'];
   angular
     .module('am.login')
-    .controller('loginController', loginController);
+    .controller('LoginController', LoginController);
 })(angular);

@@ -1,13 +1,13 @@
-<div class="login" ng-view="loginController as ctrl">
+<div class="login">
   <div class="login-group">
-    <label>Username</label>
-    <input type="text" placeholder="Username">
+    <label>email</label>
+    <input type="text" placeholder="Email" ng-model="email">
   </div>        
   <div class="login-group">
     <label>password</label>
-    <input type="password" placeholder="Password">
+    <input type="password" placeholder="Password" ng-model="password">
   </div>
   <div class="login-group">  
-    <button>Sign In</button>
+    <button ng-click="ctrl.login()">Sign In</button>
   </div>
 <div>
